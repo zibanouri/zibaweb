@@ -1,8 +1,34 @@
 {
   "name": "zibanouri",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+   "description": "React-Ts + Tailwind portfolio Template",
+  "keywords": [
+    "react",
+    "vite",
+    "typescript",
+    "project-name",
+	"admin",
+    "admin-panel",
+	"responsive"
+  ],
+  "author": {
+    "name": "Ziba Nouri",
+    "email": "zn.zibanouri@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zibanouri/project-name.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zibanouri/project-name/issues"
+  },
+  "profiles": {
+    "gitHub": "https://github.com/zibanouri",
+    "linkedin": "https://www.linkedin.com/in/zibanouri"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -25,5 +51,10 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
+  },
+
+"engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
