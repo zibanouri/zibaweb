@@ -3,15 +3,15 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
-   "description": "React-Ts + Tailwind portfolio Template",
+  "description": "React-Ts + Tailwind portfolio Template",
   "keywords": [
     "react",
     "vite",
     "typescript",
     "project-name",
-	"admin",
+    "admin",
     "admin-panel",
-	"responsive"
+    "responsive"
   ],
   "author": {
     "name": "Ziba Nouri",
@@ -20,10 +20,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zibanouri/project-name.git"
+    "url": "git+https://github.com/zibanouri/zibanouri.git"
   },
   "bugs": {
-    "url": "https://github.com/zibanouri/project-name/issues"
+    "url": "https://github.com/zibanouri/zibanouri/issues"
   },
   "profiles": {
     "gitHub": "https://github.com/zibanouri",
@@ -48,12 +48,12 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "prettier": "^3.6.2",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.39.1",
     "vite": "^7.1.2"
   },
-
-"engines": {
+  "engines": {
     "node": ">=18.0.0",
     "npm": ">=9.0.0"
   }
