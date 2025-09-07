@@ -1,14 +1,15 @@
 {
-  "name": "zibanouri",
+  "$schema": "https://json.schemastore.org/package",
+  "name": "portfolio",
   "private": true,
   "version": "1.2.0",
   "type": "module",
-  "description": "React-Ts + Tailwind zibanouri Template",
+  "description": "React-Ts + Tailwind portfolio Template",
   "keywords": [
     "react",
     "vite",
     "typescript",
-    "zibanouri"
+    "portfolio"
   ],
   "author": {
     "name": "Ziba Nouri",
@@ -17,23 +18,20 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zibanouri/github.git"
+    "url": "git+https://github.com/zibanouri/zibanouri.git"
   },
   "bugs": {
     "url": "https://github.com/zibanouri/zibanouri/issues"
   },
-  "profiles": {
-    "googleScholar": "https://scholar.google.com/citations?user=Rhue_kkAAAAJ&hl=en",
-    "gitHub": "https://github.com/zibanouri",
-    "linkedin": "https://www.linkedin.com/in/zibanouri",
-    "researchgate": "https://www.researchgate.net/profile/ziba-nouri"
-  },
+  "homepage": "https://zibanouri.github.io/zibanouri/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,js,jsx}\"",
+    "format:check": "prettier --check \"src/**/*.{ts,tsx,js,jsx}\"",
+    "lint:ci": "eslint . --max-warnings=0"
   },
   "dependencies": {
     "react": "^19.1.0",
@@ -56,6 +54,9 @@
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.38.0",
     "vite": "^7.0.6"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
   }
 }
-
