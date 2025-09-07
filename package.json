@@ -1,15 +1,14 @@
-
 {
-  "name": "portfolio",
+  "name": "zibanouri",
   "private": true,
   "version": "1.2.0",
   "type": "module",
-  "description": "React-Ts + Tailwind portfolio Template",
+  "description": "React-Ts + Tailwind zibanouri Template",
   "keywords": [
     "react",
     "vite",
     "typescript",
-    "portfolio"
+    "zibanouri"
   ],
   "author": {
     "name": "Ziba Nouri",
@@ -21,7 +20,7 @@
     "url": "git+https://github.com/zibanouri/github.git"
   },
   "bugs": {
-    "url": "https://github.com/zibanouri/portfolio/issues"
+    "url": "https://github.com/zibanouri/zibanouri/issues"
   },
   "profiles": {
     "googleScholar": "https://scholar.google.com/citations?user=Rhue_kkAAAAJ&hl=en",
