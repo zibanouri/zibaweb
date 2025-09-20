@@ -18,9 +18,9 @@ const Home = () => {
                 <div className="pt-4">
                     <a
                         href="#contact"
-                        className="inline-block px-8 py-3 bg-slate-900 text-white text-sm font-medium rounded-full hover:bg-slate-800 transition -mb-4"
+                        className="inline-block px-8 py-3 bg-slate-600 text-white text-sm font-medium rounded-full hover:bg-slate-700 transition -mb-4"
                     >
-                        هرچه میخواهد دل تنگت بگو
+                        هرچه می خواهد دل تنگت بگو
                     </a>
                 </div>
             </div>
