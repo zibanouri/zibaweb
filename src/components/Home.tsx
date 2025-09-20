@@ -1,6 +1,6 @@
 const Home = () => {
     return (
-        <div className="min-h-screen bg-white py-16 px-6 mt-16">
+        <div className="p-12 bg-white py-16 px-6 mt-16">
             <div className="max-w-md mx-auto text-center space-y-8">
                 <img
                     src="public/home.png"
