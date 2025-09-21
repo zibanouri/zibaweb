@@ -8,6 +8,9 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea"
 
 const Contact = () => {
   return (
@@ -25,18 +28,11 @@ const Contact = () => {
         </CardFooter>
       </Card>
       <CardContent className="space-y-4">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium mb-1">
-            نام شما
-          </label>
-          <input
-            id="name"
-            type="text"
-            placeholder="نام خود را وارد کنید"
-            className="w-full p-2 border rounded-md"
-          />
-        </div>
-      </CardContent>
+  <div className="space-y-2">
+    <Label htmlFor="name">نام شما</Label>
+    <Input id="name" placeholder="نام خود را وارد کنید" />
+  </div>
+</CardContent>
     </div>
   );
 };
