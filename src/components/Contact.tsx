@@ -24,6 +24,19 @@ const Contact = () => {
           <Button variant="outline">دکمه تست</Button>
         </CardFooter>
       </Card>
+      <CardContent className="space-y-4">
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium mb-1">
+            نام شما
+          </label>
+          <input
+            id="name"
+            type="text"
+            placeholder="نام خود را وارد کنید"
+            className="w-full p-2 border rounded-md"
+          />
+        </div>
+      </CardContent>
     </div>
   );
 };
