@@ -30,6 +30,7 @@ const Contact = () => {
       <CardContent className="space-y-4">
   <div className="space-y-2">
     <Label htmlFor="name">نام شما</Label>
+    <Textarea placeholder="پیام خود را بنویسید" />
     <Input id="name" placeholder="نام خود را وارد کنید" />
   </div>
 </CardContent>
