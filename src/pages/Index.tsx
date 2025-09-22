@@ -3,6 +3,7 @@ import Home from '../components/Home';
 import Skills from '../components/Skills';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Footer from '../components/Footer'
 
 const Index = () => {
     return (
@@ -12,6 +13,7 @@ const Index = () => {
             <About />
             <Skills />
             <Contact />
+            <Footer />
         </>
     );
 };
