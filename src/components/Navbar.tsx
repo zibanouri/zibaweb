@@ -1,6 +1,6 @@
 const Navbar = () => {
     return (
-        <nav className="fixed top-4 inset-x-0 mx-auto max-w-7xl z-50 bg-black/20 backdrop-blur-lg rounded-3xl shadow-xl border border-white/20">
+        <nav className="fixed top-4 inset-x-0 mx-auto max-w-7xl z-50 bg-black/20 backdrop-blur-lg rounded-lg shadow-xl border border-white/20">
             <div className="px-6 py-3">
                 <div className="flex justify-between items-center">
                     <div className="text-slate-950 font-bold text-lg tracking-wide">
@@ -12,10 +12,9 @@ const Navbar = () => {
                                 <a
                                     key={item}
                                     href="#"
-                                    className="relative text-slate-800 hover:text-slate-900 transition font-light text-sm group"
+                                    className="relative text-slate-600 hover:text-slate-950 transition font-light text-sm group"
                                 >
                                     {item}
-                                    <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-slate-600 transition-all duration-300 group-hover:w-full"></span>
                                 </a>
                             )
                         )}
@@ -27,3 +26,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

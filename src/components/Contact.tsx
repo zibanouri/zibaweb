@@ -124,7 +124,7 @@ function Contact() {
             <Button
               type="submit"
               onClick={submitForm}
-              className="w-full py-6 text-shadow-black text-slate-500 border border-slate-300"
+              className="w-full py-6 text-shadow-black text-slate-500 border border-slate-300 "
             >
               ارسال پیام
             </Button>
