@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <section className="py-20 px-6 bg-gradient-to-r from-slate-100 to-white">
+        <section id="about" className="py-20 px-6 bg-gradient-to-r from-slate-100 to-white scroll-mt-20">
             <div className="max-w-4xl mx-auto text-center space-y-8">
                 <h2 className="text-3xl font-bold text-center mb-10">
                     درباره من
