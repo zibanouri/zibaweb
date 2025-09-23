@@ -19,7 +19,7 @@ A modern, responsive admin panel template built with **React**, **TypeScript**, 
 ## Live Demo
 
 See the template in action:  
-🚀 **[View Live Demo](https://zibanouri.github.io/zibanouri)**
+**[View Live Demo](https://zibanouri.github.io/zibanouri)**
 
 ---
 
