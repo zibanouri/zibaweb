@@ -3,7 +3,7 @@ const Home = () => {
         <div id="home" className="p-6 md:p-12 bg-white py-16 mt-16">
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <img
-                    src="public/image.webp"
+                    src="/image.webp"
                     alt="زیبا نوری"
                     className="w-64 h-64 md:w-80 md:h-80 rounded-full ring-2 ring-slate-400 object-cover"
                 />
