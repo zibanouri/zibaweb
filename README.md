@@ -1,14 +1,14 @@
 <h1 align="center">
-zibanouri
+zibaweb
 </h1>
 
 <div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/zibanouri/zibanouri/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://github.com/zibaweb/zibaweb/blob/main/LICENSE)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-crimson?style=for-the-badge)](https://zibanouri.github.io/zibanouri)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-crimson?style=for-the-badge)](https://zibaweb.github.io/zibaweb)
 
 </div>
 
@@ -18,8 +18,8 @@ A modern, responsive admin panel template built with **React**, **TypeScript**, 
 
 ## Live Demo
 
-See the template in action:  
-**[View Live Demo](https://zibanouri.github.io/zibanouri)**
+See the portfolio in action:  
+[View Live Demo](https://zibanouri.github.io/zibaweb)
 
 ---
 
@@ -46,7 +46,7 @@ Contributions are welcome! To contribute:
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/zibanouri/zibanouri/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/zibaweb/zibaweb/blob/main/LICENSE) file for details.
 
 ---
 
@@ -64,7 +64,7 @@ For any inquiries, please contact:
 ---
 
 <p align="center">
-  <a href="https://coindrop.to/zibanouri" target="_blank">
+  <a href="https://coindrop.to/zibaweb" target="_blank">
     <img src="https://coindrop.to/embed-button.png" style="border-radius: 10px; height: 57px !important;width: 229px !important;" alt="Coindrop.to me">
   </a>
 </p>
@@ -72,5 +72,5 @@ For any inquiries, please contact:
 ---
 
 <div align="center">
-  <sub>Made with ❤️ by <a href="https://github.com/zibanouri">ziba</a></sub>
+  <sub>Made with ❤️ by <a href="https://github.com/zibaweb">ziba</a></sub>
 </div>

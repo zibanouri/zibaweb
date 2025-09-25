@@ -3,7 +3,7 @@ import Index from './pages/Index';
 
 function App() {
     return (
-        <BrowserRouter basename="/zibanouri">
+        <BrowserRouter basename="/zibaweb">
             <Routes>
                 <Route path="*" element={<Index />} />
             </Routes>
