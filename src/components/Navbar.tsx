@@ -14,7 +14,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="fixed top-4 inset-x-0 mx-auto max-w-7xl z-50 bg-black/20 backdrop-blur-lg rounded-lg shadow-xl border border-white/20">
+        <nav className="fixed top-4 inset-x-0 mx-auto max-w-7xl z-50 bg-black/20 backdrop-blur-lg rounded-full shadow-xl border border-white/20">
             <div className="px-6 py-3">
                 <div className="flex justify-between items-center">
                     <div className="text-slate-950 font-bold text-lg tracking-wide">
