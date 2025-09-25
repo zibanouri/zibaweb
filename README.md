@@ -1,5 +1,5 @@
 <h1 align="center">
-zibaweb
+  zibaweb
 </h1>
 
 <div align="center">
@@ -12,8 +12,7 @@ zibaweb
 
 </div>
 
-A modern, responsive template built with **React**, **TypeScript**, and **Tailwind CSS**.
-
+A modern, responsive **portfolio** built with **React**, **TypeScript**, and **Tailwind CSS**.
 
 ---
 
@@ -21,7 +20,6 @@ A modern, responsive template built with **React**, **TypeScript**, and **Tailwi
 
 See the portfolio in action:  
 [View Live Demo](https://zibanouri.github.io/zibaweb)
-
 ---
 
 ## Contributing
