@@ -12,7 +12,14 @@
 
 </div>
 
-A modern, responsive **portfolio** built with **React**, **TypeScript**, and **Tailwind CSS**.
+ My Learning and Professional Growth
+My web development journey began with mastering the fundamentals: HTML, CSS, and Bootstrap.
+I then advanced to JavaScript and TypeScript, and deepened my skills by building dynamic user interfaces with the React library.
+Currently, through consistent, project-based practice, I am working toward becoming an independent and proficient front-end developer within the next few months.
+
+At the same time, I am expanding my design capabilities by learning Photoshop, enabling me to create cohesive, visually appealing, and user-friendly interfaces.
+My ultimate goal is professional independence—delivering real value through code and creativity—and with every line I write, I take a confident step closer to that vision.
+
 
 ---
 
