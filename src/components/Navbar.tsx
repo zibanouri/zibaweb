@@ -1,3 +1,5 @@
+// import React from 'react';
+
 const Navbar = () => {
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
@@ -7,39 +9,33 @@ const Navbar = () => {
     };
 
     const navItems = [
-        { name: 'خانه', id: 'home' },
-        { name: 'درباره من', id: 'about' },
-        { name: 'مهارتها', id: 'skills' },
-        { name: 'تماس با من', id: 'contact' },
+        { name: 'Home', id: 'home' },
+        { name: 'About Me', id: 'about' },
+        { name: 'Skills', id: 'skills' },
+        { name: 'Contact Me', id: 'contact' },
     ];
 
     return (
-        <nav className="fixed top-4 inset-x-0 mx-auto max-w-7xl z-50 bg-black/40 backdrop-blur-lg rounded-full shadow-xl border border-white/20">
-            <div className="fixed top-4 inset-x-0 mx-auto max-w-7xl z-50 bg-black/40 backdrop-blur-lg rounded-full shadow-xl border border-white/20">
-                <div className="fixed top-4 inset-x-0 mx-auto max-w-7xl z-50 bg-black/40 backdrop-blur-lg rounded-full shadow-xl border border-white/20">
+        <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50">
+            <div className="bg-black/20 backdrop-blur-sm rounded-full shadow-xl border border-white/10 px-6 py-3">
+                <div className="bg-white/80 backdrop-blur-md rounded-full flex items-center space-x-6 space-x-reverse px-4 py-2">
 
-                    <div className="px-6 py-3">
-                        <div className="flex justify-between items-center">
-                            <div className="text-slate-950 font-bold text-lg tracking-wide">
-                                زیبا نوری
-                            </div>
-                            <div className="hidden md:flex space-x-6">
-                                {navItems.map((item) => (
-                                    <a
-                                        key={item.id}
-                                        href={`#${item.id}`}
-                                        onClick={(e) => {
-                                            e.preventDefault();
-                                            scrollToSection(item.id);
-                                        }}
-                                        className="relative text-slate-600 hover:text-slate-950 transition font-light text-sm group cursor-pointer"
-                                    >
-                                        {item.name}
-                                    </a>
-                                ))}
-                            </div>
-                        </div>
+                    <div className="text-slate-900 font-bold text-lg tracking-wide">
+                        Ziba Nouri
                     </div>
+                    {navItems.map((item) => (
+                        <a
+                            key={item.id}
+                            href={`#${item.id}`}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                scrollToSection(item.id);
+                            }}
+                            className="text-slate-700 hover:text-slate-950 font-medium text-sm transition cursor-pointer px-3 py-1"
+                        >
+                            {item.name}
+                        </a>
+                    ))}
                 </div>
             </div>
         </nav>
