@@ -31,10 +31,10 @@ const Footer: React.FC = () => {
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-6 md:mb-0 text-center md:text-left">
                         <div className="text-2xl font-bold text-slate-800 dark:text-slate-200">
-                            زیبا نوری
+                            Ziba Nouri
                         </div>
                         <p className="text-slate-600 dark:text-slate-400 text-sm">
-                            ساختن تجربه‌های دیجیتال زیبا
+                            Realizing a 20-year dream
                         </p>
                     </div>
 
@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                             return (
                                 <a
                                     key={social.name}
-                                    href={social.href}
+                                    href={social.href.trim()}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-slate-500 hover:text-slate-700 dark:hover:text-slate-200 transition-all duration-300 transform hover:scale-110 p-2 rounded-lg hover:bg-black/5"
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
 
                 <div className="mt-8 pt-6 border-t border-gray-500/30 text-center">
                     <p className="text-gray-700 dark:text-gray-300 text-sm">
-                        © {currentYear} تمامی حقوق محفوظ است. {' '}
+                        © {currentYear} All rights reserved.{' '}
                         <a
                             href="https://github.com/zibanouri"
                             target="_blank"
