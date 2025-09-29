@@ -3,11 +3,20 @@ import { useState } from 'react';
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+    // 👇 تابع اصلاح‌شده برای اسکرول بدون پنهان شدن محتوا
     const scrollToSection = (id: string) => {
         const element = document.getElementById(id);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
+            const navbarHeight = 70; // ارتفاع تخمینی ناوبر + فاصله از بالا
+            const elementPosition = element.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.scrollY - navbarHeight;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
         }
+        // اگر منوی موبایل باز بود، بعد از کلیک بسته بشه
         if (isMenuOpen) {
             setIsMenuOpen(false);
         }
