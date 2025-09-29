@@ -4,7 +4,6 @@ import {
   Card,
   CardHeader,
   CardTitle,
-  CardDescription,
   CardContent,
   CardFooter,
 } from '@/components/ui/card';
@@ -24,19 +23,19 @@ function Contact() {
     {
       URL: 'mailto:zn.zibanouri@gmail.com',
       icon: Mail,
-      title: 'ایمیل',
+      title: 'Email',
       displayURL: 'zn.zibanouri@gmail.com',
     },
     {
-      URL: 'https://github.com/zibanouri', 
+      URL: 'https://github.com/zibanouri',
       icon: Github,
-      title: 'گیت‌هاب',
+      title: 'GitHub',
       displayURL: 'github.com/zibanouri',
     },
     {
-      URL: 'https://www.linkedin.com/in/ziba-nouri/', 
+      URL: 'https://www.linkedin.com/in/ziba-nouri/',
       icon: Linkedin,
-      title: 'لینکدین',
+      title: 'LinkedIn',
       displayURL: 'linkedin.com/in/ziba-nouri',
     },
   ];
@@ -51,124 +50,104 @@ function Contact() {
 
   const submitForm = (e: React.FormEvent) => {
     e.preventDefault();
-    alert('پیام شما ارسال شد!');
+    alert('Your message has been sent!');
   };
 
   return (
-    <div id="contact" className="max-w-5xl mx-auto p-4 md:p-6">
-      <div className="grid gap-6 md:grid-cols-2">
-        <Card className="border-slate-500 shadow-lg">
-          <CardHeader className="text-center pb-6">
-            <CardTitle className="text-2xl font-bold">
-              با من در تماس باشید
-            </CardTitle>
-            <CardDescription className="text-muted">
-              سوالی دارید اینجا بپرسید
-            </CardDescription>
-          </CardHeader>
+    // 👇 گرادیان روی کل بخش — از بالا تا پایین، بدون محدودیت
+    <section id="contact" className="py-16 px-4 bg-gradient-to-b from-slate-50 to-slate-100">
+      <div className="max-w-5xl mx-auto">
+        {/* عنوان اصلی */}
+        <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">
+          Contact
+        </h2>
 
-          <CardContent>
-            <form onSubmit={submitForm} className="space-y-5">
-              <div className="space-y-2">
-                <Label
-                  htmlFor="name"
-                  className="text-sm font-medium"
-                >
-                  نام و نام خانوادگی
-                </Label>
-                <Input
-                  id="name"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  placeholder="..."
-                  className="text-shadow-black text-slate-500 border border-slate-300"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label
-                  htmlFor="email"
-                  className="text-sm font-medium"
-                >
-                  آدرس ایمیل
-                </Label>
-                <Input
-                  id="email"
-                  name="email"
-                  type="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder="example@gmail.com"
-                  className="text-shadow-black text-slate-500 border border-slate-300"
-                />
-              </div>
-              <div className="space-y-2">
-                <Label
-                  htmlFor="message"
-                  className="text-sm font-medium"
-                >
-                  پیام شما
-                </Label>
-                <Textarea
-                  id="message"
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  className="text-shadow-black text-slate-500 border border-slate-300"
-                />
-              </div>
-            </form>
-          </CardContent>
+        <div className="grid gap-6 md:grid-cols-2">
+          {/* فرم تماس — ساده، یک خط عنوان */}
+          <Card className="bg-white rounded-xl border border-slate-200 shadow-sm">
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-lg font-medium text-slate-800">Message</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <form onSubmit={submitForm} className="space-y-4">
+                <div className="space-y-2">
+                  <Label htmlFor="name" className="text-sm font-medium text-slate-700">Full Name</Label>
+                  <Input
+                    id="name"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    placeholder="Your name"
+                    className="border-slate-300"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-sm font-medium text-slate-700">Email</Label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder="you@example.com"
+                    className="border-slate-300"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="message" className="text-sm font-medium text-slate-700">Message</Label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    value={form.message}
+                    onChange={handleChange}
+                    rows={4}
+                    className="border-slate-300"
+                  />
+                </div>
+              </form>
+            </CardContent>
+            <CardFooter>
+              <Button
+                type="submit"
+                onClick={submitForm}
+                className="w-full bg-slate-700 hover:bg-slate-800 text-white"
+              >
+                Send
+              </Button>
+            </CardFooter>
+          </Card>
 
-          <CardFooter className="pt-6">
-            <Button
-              type="submit"
-              onClick={submitForm}
-              className="w-full py-6 text-shadow-black text-slate-500 border border-slate-300 "
-            >
-              ارسال پیام
-            </Button>
-          </CardFooter>
-        </Card>
-        <Card className="border-slate-500 shadow-lg flex flex-col">
-          <CardHeader className="text-center pb-6">
-            <CardTitle className="text-2xl font-bold">
-              اطلاعات تماس
-            </CardTitle>
-            <CardDescription className="text-muted">
-              ارتباط با من
-            </CardDescription>
-          </CardHeader>
-
-          <CardContent className="flex-1">
-            <div className="space-y-4">
-              {socials.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.title}
-                    href={social.URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-3 p-3 w-full rounded-lg border border-slate-200 dark:border-slate-600 hover:bg-slate-100 dark:hover:bg-slate-100 transition-colors duration-300 group"
-                  >
-                    <Icon className="w-5 h-5 text-slate-600 dark:text-slate-700 group-hover:text-slate-500" />
-                    <div>
-                      <div className="font-medium text-slate-700 dark:text-slate-900">
-                        {social.title}
+          {/* اطلاعات تماس — فقط یک خط عنوان */}
+          <Card className="bg-white rounded-xl border border-slate-200 shadow-sm">
+            <CardHeader className="text-center pb-4">
+              <CardTitle className="text-lg font-medium text-slate-800">Connect</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-3">
+                {socials.map((social) => {
+                  const Icon = social.icon;
+                  return (
+                    <a
+                      key={social.title}
+                      href={social.URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-2.5 rounded-lg hover:bg-slate-50 transition-colors"
+                    >
+                      <Icon className="w-4 h-4 text-slate-600" />
+                      <div>
+                        <div className="text-sm font-medium text-slate-700">{social.title}</div>
+                        <div className="text-xs text-slate-500">{social.displayURL}</div>
                       </div>
-                      <div className="text-sm text-slate-700 dark:text-slate-900">
-                        {social.displayURL}
-                      </div>
-                    </div>
-                  </a>
-                );
-              })}
-            </div>
-          </CardContent>
-        </Card>
+                    </a>
+                  );
+                })}
+              </div>
+            </CardContent>
+          </Card>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
 
