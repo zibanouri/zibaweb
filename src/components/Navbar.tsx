@@ -22,16 +22,12 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-7xl px-4">
-            {/* نسخه دسکتاپ */}
             <div className="hidden md:block">
                 <div className="bg-black/20 backdrop-blur-sm rounded-full shadow-xl border border-white/10 px-6 py-3">
                     <div className="bg-white/80 backdrop-blur-md rounded-full flex items-center justify-between px-4 py-2">
-                        {/* اسم در سمت چپ */}
                         <div className="text-slate-900 font-bold text-lg tracking-wide">
                             Ziba Nouri
                         </div>
-
-                        {/* منو در سمت راست */}
                         <div className="flex space-x-6 space-x-reverse">
                             {navItems.map((item) => (
                                 <a
@@ -50,16 +46,11 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
-            {/* نسخه موبایل */}
             <div className="md:hidden">
                 <div className="bg-black/20 backdrop-blur-sm rounded-full shadow-xl border border-white/10 px-4 py-3 flex items-center justify-between">
-                    {/* اسم در سمت چپ */}
                     <div className="text-white font-bold text-lg tracking-wide">
                         Ziba Nouri
                     </div>
-
-                    {/* همبرگر در سمت راست */}
                     <button
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                         className="text-white focus:outline-none"
@@ -76,8 +67,6 @@ const Navbar = () => {
                         )}
                     </button>
                 </div>
-
-                {/* منوی بازشونده */}
                 {isMenuOpen && (
                     <div className="mt-3 bg-black/20 backdrop-blur-sm rounded-2xl shadow-xl border border-white/10 overflow-hidden">
                         <div className="bg-white/80 backdrop-blur-md py-3">
