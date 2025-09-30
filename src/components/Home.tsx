@@ -12,7 +12,7 @@ const Home = () => {
                     <div>
                         <a
                             href="#contact"
-                            className="inline-block px-8 py-3 bg-slate-500 text-white text-sm font-medium rounded-full hover:bg-slate-600 transition"
+                            className="inline-block px-8 py-3 bg-slate-500 text-white text-sm font-medium rounded-lg hover:bg-slate-600 transition"
                         >
                         Let’s Talk
                         </a>

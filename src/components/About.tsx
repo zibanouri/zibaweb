@@ -7,11 +7,11 @@ const About = () => {
                 </h2>
                 <div className="bg-white p-8 md:p-10 rounded-2xl shadow-lg border border-slate-200 max-w-3xl mx-auto">
                     <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
-                        I’m a dedicated frontend developer with a deep passion for crafting clean, responsive, and user-centered web experiences.  
-                        Balancing the demands of raising two children as a single parent while relentlessly pursuing my career hasn’t been easy  
-                        but every challenge has only strengthened my resolve.  
-                        Today, I’m working harder than ever to grow my skills, build meaningful projects, and take the next step:  
-                        earning a work visa to contribute my talent on a global stage.
+                        I am a front-end developer. I have acquired the skills of
+                        HTML, CSS, Bootstrap, JavaScript, TypeScript, React, Tailwind, CSS, and SHETCN.
+                        I am currently building a dedicated repository for myself and with every code I write,
+                        I am one step closer to my dreams. No challenge will stop me from reaching my goal.
+                        I am achieving my twenty-year-old dream. This is my life and my children's.
                     </p>
                 </div>
             </div>

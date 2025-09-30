@@ -31,8 +31,8 @@ const Navbar = () => {
     return (
         <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-7xl px-4">
             <div className="hidden md:block">
-                <div className="bg-black/20 backdrop-blur-sm rounded-full shadow-xl border border-white/10 px-6 py-3">
-                    <div className="bg-white/80 backdrop-blur-md rounded-full flex items-center justify-between px-4 py-2">
+                <div className="bg-black/20 backdrop-blur-sm rounded-lg shadow-xl border border-white/10 px-6 py-3">
+                    <div className="bg-white/80 backdrop-blur-md rounded-lg flex items-center justify-between px-4 py-2">
                         <div className="text-slate-900 font-bold text-lg tracking-wide">
                             Ziba Nouri
                         </div>
