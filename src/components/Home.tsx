@@ -7,14 +7,15 @@ const Home = () => {
                         Ziba Nouri
                     </h1>
                     <p className="text-slate-600 text-base md:text-lg">
-                        Web Designer & Developer — Passionate about simplicity and beauty
+                        Web Designer & Developer — Passionate about simplicity
+                        and beauty
                     </p>
                     <div>
                         <a
                             href="#contact"
                             className="inline-block px-8 py-3 bg-slate-500 text-white text-sm font-medium rounded-lg hover:bg-slate-600 transition"
                         >
-                        Let’s Talk
+                            Let’s Talk
                         </a>
                     </div>
                 </div>

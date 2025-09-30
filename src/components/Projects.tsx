@@ -1,4 +1,10 @@
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from '@/components/ui/card';
+import {
+    Card,
+    CardHeader,
+    CardTitle,
+    CardContent,
+    CardFooter,
+} from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Github, ExternalLink } from 'lucide-react';
 
@@ -13,33 +19,35 @@ interface Project {
 
 const projects: Project[] = [
     {
-        title: "Zibaweb",
-        description: "A modern personal portfolio built with React, Tailwind CSS and shadcn",
-        tech: ["React", "TypeScript", "Tailwind CSS"],
-        githubUrl: "https://github.com/zibanouri/zibaweb  ",
-        imageUrl: "public/images/zibaweb.webp"
+        title: 'Zibaweb',
+        description:
+            'A modern personal portfolio built with React, Tailwind CSS and shadcn',
+        tech: ['React', 'TypeScript', 'Tailwind CSS'],
+        githubUrl: 'https://github.com/zibanouri/zibaweb  ',
+        imageUrl: '/zibaweb/images/zibaweb.webp',
     },
     {
-        title: "Zarnika",
-        description: "Modern admin panel",
-        tech: ["typescript" , "react" , "tailwindcss ,shadcn"],
-        githubUrl: "https://github.com/zibanouri/zarnika  ",
-        imageUrl: "public/images/zarnika.webp"
+        title: 'Zarnika',
+        description: 'Modern admin panel',
+        tech: ['typescript', 'react', 'tailwindcss ,shadcn'],
+        githubUrl: 'https://github.com/zibanouri/zarnika  ',
+        imageUrl: '/zibaweb/images/zarnika.webp',
     },
     {
-        title: "Portfolio",
-        description: "Modern, responsive portfolio template built with React, TypeScript and Tailwindcss",
-        tech: ["React", "CSS", "JavaScript"],
-        githubUrl: "https://github.com/zibanouri/portfolio  ",
-        imageUrl: "public/images/portfolio.webp"
+        title: 'Portfolio',
+        description:
+            'Modern, responsive portfolio template built with React, TypeScript and Tailwindcss',
+        tech: ['React', 'CSS', 'JavaScript'],
+        githubUrl: 'https://github.com/zibanouri/portfolio  ',
+        imageUrl: '/zibaweb/images/portfolio.webp',
     },
     {
-        title: "ArikA",
-        description: "A frontend project styled with SCSS (Sassy CSS)",
-        tech: ["scss"],
-        githubUrl: "https://github.com/zibanouri/ArikA  ",
-        imageUrl: "public/images/Arika.webp"
-    }
+        title: 'ArikA',
+        description: 'A frontend project styled with SCSS (Sassy CSS)',
+        tech: ['scss'],
+        githubUrl: 'https://github.com/zibanouri/ArikA  ',
+        imageUrl: '/zibaweb/images/Arika.webp',
+    },
 ];
 const Projects = () => {
     return (
@@ -64,7 +72,8 @@ const Projects = () => {
                                     alt={project.title}
                                     className="w-full h-full object-cover"
                                     onError={(e) => {
-                                        e.currentTarget.src = "https://placehold.co/600x400?text=No+Preview";
+                                        e.currentTarget.src =
+                                            'https://placehold.co/600x400?text=No+Preview';
                                     }}
                                 />
                             </div>
@@ -96,7 +105,9 @@ const Projects = () => {
                                     variant="outline"
                                     size="sm"
                                     className="flex-1 gap-2 border-slate-300 text-slate-700 hover:bg-slate-50"
-                                    onClick={() => window.open(project.githubUrl, "_blank")}
+                                    onClick={() =>
+                                        window.open(project.githubUrl, '_blank')
+                                    }
                                 >
                                     <Github className="w-4 h-4" />
                                     GitHub
@@ -106,7 +117,12 @@ const Projects = () => {
                                         variant="outline"
                                         size="sm"
                                         className="flex-1 gap-2 border-slate-300 text-slate-700 hover:bg-slate-50"
-                                        onClick={() => window.open(project.demoUrl, "_blank")}
+                                        onClick={() =>
+                                            window.open(
+                                                project.demoUrl,
+                                                '_blank'
+                                            )
+                                        }
                                     >
                                         <ExternalLink className="w-4 h-4" />
                                         Live Demo
@@ -121,4 +137,4 @@ const Projects = () => {
     );
 };
 
-export default Projects; 
+export default Projects;

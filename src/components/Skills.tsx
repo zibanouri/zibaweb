@@ -15,7 +15,10 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills" className="py-16 px-6 bg-gradient-to-b from-slate-50 to-slate-100">
+        <section
+            id="skills"
+            className="py-16 px-6 bg-gradient-to-b from-slate-50 to-slate-100"
+        >
             <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">
                 My Skills
             </h2>
