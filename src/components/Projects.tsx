@@ -52,7 +52,7 @@ const projects: Project[] = [
 const Projects = () => {
     return (
         <section
-            id="Projects"
+           id="projects" 
             className="py-16 px-4 bg-gradient-to-b from-slate-50 to-slate-100 leading-none"
         >
             <div className="max-w-6xl mx-auto">
