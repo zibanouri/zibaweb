@@ -22,7 +22,7 @@ const projects: Project[] = [
     {
         title: "Zarnika",
         description: "Modern admin panel",
-        tech: ["typescript , react , tailwindcss ,shadcn"],
+        tech: ["typescript" , "react" , "tailwindcss ,shadcn"],
         githubUrl: "https://github.com/zibanouri/zarnika  ",
         imageUrl: "public/images/zarnika.webp"
     },
@@ -44,7 +44,7 @@ const projects: Project[] = [
 const Projects = () => {
     return (
         <section
-            id="Project"
+            id="Projects"
             className="py-16 px-4 bg-gradient-to-b from-slate-50 to-slate-100 leading-none"
         >
             <div className="max-w-6xl mx-auto">
