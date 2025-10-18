@@ -2,8 +2,8 @@ const Footer: React.FC = () => {
     const currentYear = new Date().getFullYear();
 
     return (
-        <footer className="py-6 px-4 border-t border-gray-200 dark:border-gray-700 bg-white dark:bg-slate-900">
-            <div className="max-w-4xl mx-auto text-center text-sm text-gray-600 dark:text-gray-400">
+        <footer className="py-6 px-4 border-t border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900">
+            <div className="max-w-4xl mx-auto text-center text-sm text-slate-600 dark:text-slate-400">
                 <p className="mb-2">
                     © {currentYear} Ziba Nouri. All rights reserved.
                 </p>

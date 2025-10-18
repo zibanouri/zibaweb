@@ -12,8 +12,8 @@ const Home = () => {
                     </p>
                     <div>
                         <a
-                            href="#contact"
-                            className="inline-block px-8 py-3 bg-slate-500 text-white text-sm font-medium rounded-lg hover:bg-slate-600 dark:bg-slate-600 dark:hover:bg-slate-500 transition"
+                            href="contact"
+                            className="inline-block px-8 py-3 bg-slate-600 text-white text-sm font-medium rounded-lg hover:bg-slate-700 dark:bg-slate-600 dark:hover:bg-slate-500 transition"
                         >
                             Let’s Talk
                         </a>
