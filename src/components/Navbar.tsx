@@ -52,9 +52,7 @@ const Navbar = () => {
                                 </a>
                             ))}
                             <div className="flex items-center">
-                                <div className="relative">
-                                  
-                                </div>
+                                <div className="relative"></div>
                             </div>
 
                             <Button
