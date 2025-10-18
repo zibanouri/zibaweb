@@ -3,11 +3,13 @@ import Index from './pages/Index';
 
 function App() {
     return (
-        <BrowserRouter basename="/zibaweb">
-            <Routes>
-                <Route path="*" element={<Index />} />
-            </Routes>
-        </BrowserRouter>
+        <div className="min-h-screen bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
+            <BrowserRouter basename="/zibaweb">
+                <Routes>
+                    <Route path="*" element={<Index />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
     );
 }
 

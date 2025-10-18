@@ -33,7 +33,9 @@ const Navbar = () => {
         <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-7xl px-4">
             {/* Desktop */}
             <div className="hidden md:block">
-                <div className="bg-white/20 dark:bg-black/20 backdrop-blur-sm rounded-lg shadow-xl border border-white/10 px-6 py-3">
+                {/* لایه بیرونی: تیره‌تر + شیشه‌ای */}
+                <div className="bg-slate-900/30 dark:bg-black/40 backdrop-blur-sm rounded-lg shadow-xl border border-slate-700/20 dark:border-black/30 px-6 py-3">
+                    {/* لایه داخلی: روشن‌تر + شیشه‌ای */}
                     <div className="bg-white/80 dark:bg-slate-800/90 backdrop-blur-md rounded-lg flex items-center justify-between px-4 py-2">
                         <div className="text-slate-900 dark:text-white font-bold text-lg tracking-wide">
                             Ziba Nouri
@@ -75,7 +77,8 @@ const Navbar = () => {
 
             {/* Mobile */}
             <div className="md:hidden">
-                <div className="bg-white/20 dark:bg-black/20 backdrop-blur-sm rounded-full shadow-xl border border-white/10 px-4 py-3 flex items-center justify-between">
+                {/* لایه بیرونی موبایل: تیره‌تر */}
+                <div className="bg-slate-900/30 dark:bg-black/40 backdrop-blur-sm rounded-full shadow-xl border border-slate-700/20 dark:border-black/30 px-4 py-3 flex items-center justify-between">
                     <div className="text-slate-900 dark:text-white font-bold text-lg tracking-wide">
                         Ziba Nouri
                     </div>
@@ -110,7 +113,7 @@ const Navbar = () => {
                     </div>
                 </div>
                 {isMenuOpen && (
-                    <div className="mt-3 bg-white/20 dark:bg-black/20 backdrop-blur-sm rounded-2xl shadow-xl border border-white/10 overflow-hidden">
+                    <div className="mt-3 bg-slate-900/30 dark:bg-black/40 backdrop-blur-sm rounded-2xl shadow-xl border border-slate-700/20 dark:border-black/30 overflow-hidden">
                         <div className="bg-white/80 dark:bg-slate-800/90 backdrop-blur-md py-3">
                             {navItems.map((item) => (
                                 <a
