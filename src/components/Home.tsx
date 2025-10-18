@@ -1,7 +1,8 @@
 const Home = () => {
     return (
         <>
-            <div className="h-28"></div> {/* فضای خالی برای جلوگیری از پنهان شدن زیر نوار */}
+            <div className="h-28"></div>{' '}
+            {/* فضای خالی برای جلوگیری از پنهان شدن زیر نوار */}
             <div
                 id="home"
                 className="p-6 md:p-12 bg-white dark:bg-slate-900 py-16 scroll-mt-28"
@@ -12,7 +13,8 @@ const Home = () => {
                             Ziba Nouri
                         </h1>
                         <p className="text-slate-600 dark:text-slate-300 text-base md:text-lg">
-                            Web Designer & Developer — Passionate about simplicity and beauty
+                            Web Designer & Developer — Passionate about
+                            simplicity and beauty
                         </p>
                         <div>
                             <a
