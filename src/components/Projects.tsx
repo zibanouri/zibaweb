@@ -23,40 +23,41 @@ const projects: Project[] = [
         description:
             'A modern personal portfolio built with React, Tailwind CSS and shadcn',
         tech: ['React', 'TypeScript', 'Tailwind CSS'],
-        githubUrl: 'https://github.com/zibanouri/zibaweb  ',
+        githubUrl: 'https://github.com/zibanouri/zibaweb',
         imageUrl: '/zibaweb/images/zibaweb.webp',
     },
     {
         title: 'Zarnika',
         description: 'Modern admin panel',
-        tech: ['Typescript', 'React', 'Tailwindcss' ,'Shadcn'],
-        githubUrl: 'https://github.com/zibanouri/zarnika  ',
+        tech: ['TypeScript', 'React', 'Tailwind CSS', 'Shadcn'],
+        githubUrl: 'https://github.com/zibanouri/zarnika',
         imageUrl: '/zibaweb/images/zarnika.webp',
     },
     {
         title: 'Portfolio',
         description:
-            'Modern, responsive portfolio template built with React, TypeScript and Tailwindcss',
+            'Modern, responsive portfolio template built with React, TypeScript and Tailwind CSS',
         tech: ['React', 'CSS', 'JavaScript'],
-        githubUrl: 'https://github.com/zibanouri/portfolio  ',
+        githubUrl: 'https://github.com/zibanouri/portfolio',
         imageUrl: '/zibaweb/images/portfolio.webp',
     },
     {
         title: 'ArikA',
         description: 'A frontend project styled with SCSS (Sassy CSS)',
-        tech: ['Scss'],
-        githubUrl: 'https://github.com/zibanouri/ArikA  ',
+        tech: ['SCSS'],
+        githubUrl: 'https://github.com/zibanouri/ArikA',
         imageUrl: '/zibaweb/images/Arika.webp',
     },
 ];
+
 const Projects = () => {
     return (
         <section
             id="projects"
-            className="py-16 px-4 bg-gradient-to-b from-slate-50 to-slate-100 leading-none"
+            className="py-16 px-4 bg-white dark:bg-slate-900 scroll-mt-28"
         >
             <div className="max-w-6xl mx-auto">
-                <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">
+                <h2 className="text-3xl font-bold text-center text-slate-800 dark:text-white mb-12">
                     Projects
                 </h2>
 
@@ -64,9 +65,9 @@ const Projects = () => {
                     {projects.map((project, index) => (
                         <Card
                             key={index}
-                            className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden"
+                            className="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm overflow-hidden"
                         >
-                            <div className="h-48 bg-slate-100 flex items-center justify-center border-b border-slate-200">
+                            <div className="h-48 bg-slate-100 dark:bg-slate-700 flex items-center justify-center border-b border-slate-200 dark:border-slate-700">
                                 <img
                                     src={project.imageUrl}
                                     alt={project.title}
@@ -79,20 +80,20 @@ const Projects = () => {
                             </div>
 
                             <CardHeader className="pb-3">
-                                <CardTitle className="text-lg font-medium text-slate-800 leading-none">
+                                <CardTitle className="text-lg font-medium text-slate-800 dark:text-white leading-none">
                                     {project.title}
                                 </CardTitle>
                             </CardHeader>
 
                             <CardContent className="space-y-3">
-                                <p className="text-slate-600 text-sm leading-none">
+                                <p className="text-slate-600 dark:text-slate-300 text-sm leading-none">
                                     {project.description}
                                 </p>
                                 <div className="flex flex-wrap gap-2">
                                     {project.tech.map((tech, i) => (
                                         <span
                                             key={i}
-                                            className="px-2 py-1 bg-slate-100 text-slate-700 text-xs rounded-md"
+                                            className="px-2 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-xs rounded-md"
                                         >
                                             {tech}
                                         </span>
@@ -104,9 +105,9 @@ const Projects = () => {
                                 <Button
                                     variant="outline"
                                     size="sm"
-                                    className="flex-1 gap-2 border-slate-300 text-slate-700 hover:bg-slate-50"
+                                    className="flex-1 gap-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
                                     onClick={() =>
-                                        window.open(project.githubUrl, '_blank')
+                                        window.open(project.githubUrl.trim(), '_blank')
                                     }
                                 >
                                     <Github className="w-4 h-4" />
@@ -116,12 +117,9 @@ const Projects = () => {
                                     <Button
                                         variant="outline"
                                         size="sm"
-                                        className="flex-1 gap-2 border-slate-300 text-slate-700 hover:bg-slate-50"
+                                        className="flex-1 gap-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
                                         onClick={() =>
-                                            window.open(
-                                                project.demoUrl,
-                                                '_blank'
-                                            )
+                                            window.open(project.demoUrl!, '_blank')
                                         }
                                     >
                                         <ExternalLink className="w-4 h-4" />
