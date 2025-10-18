@@ -107,7 +107,10 @@ const Projects = () => {
                                     size="sm"
                                     className="flex-1 gap-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
                                     onClick={() =>
-                                        window.open(project.githubUrl.trim(), '_blank')
+                                        window.open(
+                                            project.githubUrl.trim(),
+                                            '_blank'
+                                        )
                                     }
                                 >
                                     <Github className="w-4 h-4" />
@@ -119,7 +122,10 @@ const Projects = () => {
                                         size="sm"
                                         className="flex-1 gap-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700"
                                         onClick={() =>
-                                            window.open(project.demoUrl!, '_blank')
+                                            window.open(
+                                                project.demoUrl!,
+                                                '_blank'
+                                            )
                                         }
                                     >
                                         <ExternalLink className="w-4 h-4" />

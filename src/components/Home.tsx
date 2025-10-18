@@ -10,7 +10,8 @@ const Home = () => {
                         Ziba Nouri
                     </h1>
                     <p className="text-slate-600 dark:text-slate-300 text-base md:text-lg">
-                        Web Designer & Developer — Passionate about simplicity and beauty
+                        Web Designer & Developer — Passionate about simplicity
+                        and beauty
                     </p>
                     <div>
                         <a

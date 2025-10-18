@@ -56,7 +56,11 @@ const Navbar = () => {
                                 variant="ghost"
                                 size="sm"
                                 onClick={toggleDarkMode}
-                                aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+                                aria-label={
+                                    darkMode
+                                        ? 'Switch to light mode'
+                                        : 'Switch to dark mode'
+                                }
                             >
                                 {darkMode ? (
                                     <Sun className="h-5 w-5 text-slate-700 dark:text-slate-300" />
@@ -80,7 +84,11 @@ const Navbar = () => {
                             variant="ghost"
                             size="sm"
                             onClick={toggleDarkMode}
-                            aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+                            aria-label={
+                                darkMode
+                                    ? 'Switch to light mode'
+                                    : 'Switch to dark mode'
+                            }
                         >
                             {darkMode ? (
                                 <Sun className="h-5 w-5 text-slate-700 dark:text-slate-300" />
@@ -93,7 +101,11 @@ const Navbar = () => {
                             className="text-slate-700 dark:text-slate-300 focus:outline-none"
                             aria-label="Toggle menu"
                         >
-                            {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                            {isMenuOpen ? (
+                                <X className="h-6 w-6" />
+                            ) : (
+                                <Menu className="h-6 w-6" />
+                            )}
                         </button>
                     </div>
                 </div>
