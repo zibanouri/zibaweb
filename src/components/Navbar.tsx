@@ -31,16 +31,13 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-full max-w-7xl px-4">
-            {/* Desktop */}
             <div className="hidden md:block">
-                {/* لایه بیرونی: تیره‌تر + شیشه‌ای */}
                 <div className="bg-slate-900/30 dark:bg-black/40 backdrop-blur-sm rounded-lg shadow-xl border border-slate-700/20 dark:border-black/30 px-6 py-3">
-                    {/* لایه داخلی: روشن‌تر + شیشه‌ای */}
                     <div className="bg-white/80 dark:bg-slate-800/90 backdrop-blur-md rounded-lg flex items-center justify-between px-4 py-2">
                         <div className="text-slate-900 dark:text-white font-bold text-lg tracking-wide">
                             Ziba Nouri
                         </div>
-                        <div className="flex items-center space-x-6 space-x-reverse">
+                        <div className="flex items-center gap-6 space-x-6 space-x-reverse">
                             {navItems.map((item) => (
                                 <a
                                     key={item.id}
@@ -54,6 +51,12 @@ const Navbar = () => {
                                     {item.name}
                                 </a>
                             ))}
+                            <div className="flex items-center">
+                                <div className="relative">
+                                  
+                                </div>
+                            </div>
+
                             <Button
                                 variant="ghost"
                                 size="sm"
@@ -74,10 +77,7 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Mobile */}
             <div className="md:hidden">
-                {/* لایه بیرونی موبایل: تیره‌تر */}
                 <div className="bg-slate-900/30 dark:bg-black/40 backdrop-blur-sm rounded-full shadow-xl border border-slate-700/20 dark:border-black/30 px-4 py-3 flex items-center justify-between">
                     <div className="text-slate-900 dark:text-white font-bold text-lg tracking-wide">
                         Ziba Nouri
