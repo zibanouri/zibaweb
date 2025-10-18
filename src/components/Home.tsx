@@ -2,7 +2,6 @@ const Home = () => {
     return (
         <>
             <div className="h-28"></div>{' '}
-            {/* فضای خالی برای جلوگیری از پنهان شدن زیر نوار */}
             <div
                 id="home"
                 className="p-6 md:p-12 bg-white dark:bg-slate-900 py-16 scroll-mt-28"
@@ -18,7 +17,7 @@ const Home = () => {
                         </p>
                         <div>
                             <a
-                                href="#contact"
+                                href="contact"
                                 className="inline-block px-8 py-3 bg-slate-600 text-white text-sm font-medium rounded-lg hover:bg-slate-700 dark:bg-slate-600 dark:hover:bg-slate-500 transition"
                             >
                                 Let’s Talk
@@ -26,7 +25,7 @@ const Home = () => {
                         </div>
                     </div>
                     <img
-                        src="/zibaweb/ziba2.jpg"
+                        src="/zibaweb/ziba..jpg"
                         alt="Ziba Nouri"
                         className="w-64 h-64 md:w-80 md:h-80 rounded-full ring-2 ring-slate-400 dark:ring-slate-500 object-cover order-1 md:order-2"
                     />
