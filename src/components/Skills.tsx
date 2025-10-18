@@ -17,9 +17,9 @@ const Skills = () => {
     return (
         <section
             id="skills"
-            className="py-16 px-6 bg-gradient-to-b from-slate-50 to-slate-100"
+            className="py-16 px-6 bg-white dark:bg-slate-900 scroll-mt-28"
         >
-            <h2 className="text-3xl font-bold text-center text-slate-800 mb-12">
+            <h2 className="text-3xl font-bold text-center text-slate-800 dark:text-white mb-12">
                 My Skills
             </h2>
 
@@ -27,7 +27,7 @@ const Skills = () => {
                 {skillGroups.map((group, groupIndex) => (
                     <div
                         key={groupIndex}
-                        className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm"
+                        className="bg-white dark:bg-slate-800 p-6 rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm"
                     >
                         <div className="space-y-5">
                             {group.map((skill) => (
@@ -36,16 +36,16 @@ const Skills = () => {
                                     className="group cursor-default"
                                 >
                                     <div className="flex justify-between items-center mb-2">
-                                        <span className="text-slate-700 font-medium text-sm group-hover:text-slate-900 transition-colors duration-200">
+                                        <span className="text-slate-700 dark:text-slate-300 font-medium text-sm group-hover:text-slate-900 dark:group-hover:text-slate-100 transition-colors duration-200">
                                             {skill.name}
                                         </span>
-                                        <span className="text-slate-500 text-sm font-medium group-hover:text-slate-700 transition-colors duration-200">
+                                        <span className="text-slate-500 dark:text-slate-400 text-sm font-medium group-hover:text-slate-700 dark:group-hover:text-slate-300 transition-colors duration-200">
                                             {skill.level}%
                                         </span>
                                     </div>
-                                    <div className="w-full bg-slate-200 rounded-full h-2.5 overflow-hidden">
+                                    <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
                                         <div
-                                            className="h-2.5 rounded-full bg-slate-600 group-hover:bg-slate-700 transition-all duration-300 ease-out"
+                                            className="h-2.5 rounded-full bg-slate-600 dark:bg-slate-400 group-hover:bg-slate-700 dark:group-hover:bg-slate-300 transition-all duration-300 ease-out"
                                             style={{ width: `${skill.level}%` }}
                                         ></div>
                                     </div>
