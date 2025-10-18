@@ -1,14 +1,16 @@
 const Home = () => {
     return (
-        <div id="home" className="p-6 md:p-12 bg-white dark:bg-slate-900 py-16 mt-16">
+        <div
+            id="home"
+            className="p-6 md:p-12 bg-white dark:bg-slate-900 py-16 pt-28 scroll-mt-28"
+        >
             <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
                 <div className="text-center md:text-left space-y-6 flex-1 order-2 md:order-1">
                     <h1 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white">
                         Ziba Nouri
                     </h1>
                     <p className="text-slate-600 dark:text-slate-300 text-base md:text-lg">
-                        Web Designer & Developer — Passionate about simplicity
-                        and beauty
+                        Web Designer & Developer — Passionate about simplicity and beauty
                     </p>
                     <div>
                         <a

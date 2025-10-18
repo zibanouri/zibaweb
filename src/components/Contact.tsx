@@ -129,9 +129,9 @@ function Contact() {
                                         href={social.URL}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="group flex items-center gap-4 p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors border border-transparent hover:border-slate-200 dark:hover:border-slate-700"
+                                        className="group flex items-center gap-4 p-3 rounded-xl hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors hover:border-slate-200 dark:hover:border-slate-700 border border-slate-200"
                                     >
-                                        <div className="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 group-hover:bg-white dark:group-hover:bg-slate-600 text-slate-600 dark:text-slate-300 transition">
+                                        <div className="p-2 rounded-lg bg-slate-100 dark:bg-slate-700 group-hover:bg-white dark:group-hover:bg-slate-600 text-slate-600 dark:text-slate-300 transition border border-slate-500">
                                             <Icon className="w-5 h-5" />
                                         </div>
                                         <span className="font-medium text-slate-800 dark:text-slate-200 group-hover:text-slate-900 dark:group-hover:text-slate-100 transition">
