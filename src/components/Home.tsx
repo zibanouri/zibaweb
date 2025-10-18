@@ -20,7 +20,7 @@ const Home = () => {
                     </div>
                 </div>
                 <img
-                    src="/zibaweb/image.webp"
+                    src="/zibaweb/ziba2.jpg"
                     alt="Ziba Nouri"
                     className="w-64 h-64 md:w-80 md:h-80 rounded-full ring-2 ring-slate-400 dark:ring-slate-500 object-cover order-1 md:order-2"
                 />
